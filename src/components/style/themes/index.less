@@ -1,0 +1,18 @@
+@import './variable.less';
+@purple: #5C50BB;
+@purple-1: #EFEDFD;
+@orange: #ffb31ac0;
+@orange-1: #ffb31ac0;
+
+@themeColor:@purple;
+@themeColorbg:@purple-1;
+
+:root ,[singtel-theme='purple']{
+  --themeColor:@purple;
+  --themeColorbg:@purple-1;
+}
+
+[singtel-theme="orange"] {
+  --themeColor:@orange;
+  --themeColorbg:@orange-1;
+}

@@ -1,0 +1,556 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Table renders JSX correctly for plain table 1`] = `
+<div
+  class="singtel-table-wrapper"
+>
+  <div
+    class="singtel-table"
+  >
+    <div
+      class="singtel-table-container"
+    >
+      <div
+        class="singtel-table-content"
+      >
+        <table
+          style="table-layout: auto;"
+        >
+          <colgroup />
+          <thead
+            class="singtel-table-thead"
+          >
+            <tr>
+              <th
+                class="singtel-table-cell"
+                scope="col"
+              >
+                Contract details
+              </th>
+            </tr>
+          </thead>
+          <tbody
+            class="singtel-table-tbody"
+          >
+            <tr
+              class="singtel-table-row singtel-table-row-level-0"
+              data-row-key="1"
+            >
+              <td
+                class="singtel-table-cell"
+              >
+                <ul>
+                  <li>
+                    <span
+                      class="head1"
+                    >
+                      name:
+                    </span>
+                       
+                    <span
+                      class="val1"
+                    >
+                      Jack1
+                    </span>
+                  </li>
+                  <li>
+                    <span
+                      class="head1"
+                    >
+                      age:
+                    </span>
+                       
+                    <span
+                      class="val1"
+                    >
+                      38
+                    </span>
+                  </li>
+                  <li>
+                    <span
+                      class="head1"
+                    >
+                      address:
+                    </span>
+                       
+                    <span
+                      class="val1"
+                    >
+                      some where
+                    </span>
+                  </li>
+                  <li>
+                    <span
+                      class="head1"
+                    >
+                      operations:
+                    </span>
+                       
+                    <span
+                      class="val1"
+                    >
+                      qwe
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr
+              class="singtel-table-row singtel-table-row-level-0"
+              data-row-key="2"
+            >
+              <td
+                class="singtel-table-cell"
+              >
+                <ul>
+                  <li>
+                    <span
+                      class="head1"
+                    >
+                      name:
+                    </span>
+                       
+                    <span
+                      class="val1"
+                    >
+                      Rose
+                    </span>
+                  </li>
+                  <li>
+                    <span
+                      class="head1"
+                    >
+                      age:
+                    </span>
+                       
+                    <span
+                      class="val1"
+                    >
+                      26
+                    </span>
+                  </li>
+                  <li>
+                    <span
+                      class="head1"
+                    >
+                      address:
+                    </span>
+                       
+                    <span
+                      class="val1"
+                    >
+                      some where
+                    </span>
+                  </li>
+                  <li>
+                    <span
+                      class="head1"
+                    >
+                      operations:
+                    </span>
+                       
+                    <span
+                      class="val1"
+                    >
+                      aaa
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Table renders JSX correctly for selection table 1`] = `
+<div
+  class="singtel-table-wrapper"
+>
+  <div
+    class="singtel-table"
+  >
+    <div
+      class="singtel-table-container"
+    >
+      <div
+        class="singtel-table-content"
+      >
+        <table
+          style="table-layout: auto;"
+        >
+          <colgroup>
+            <col
+              style="width: 32px;"
+            />
+          </colgroup>
+          <thead
+            class="singtel-table-thead"
+          >
+            <tr>
+              <td
+                class="singtel-table-cell"
+              />
+              <th
+                class="singtel-table-cell"
+                scope="col"
+              >
+                Contract details
+              </th>
+            </tr>
+          </thead>
+          <tbody
+            class="singtel-table-tbody"
+          >
+            <tr
+              class="singtel-table-row singtel-table-row-level-0"
+              data-row-key="1"
+            >
+              <td
+                class="singtel-table-cell"
+              >
+                <div
+                  class="chooseColumn"
+                >
+                  <span>
+                    <div>
+                      <span
+                        class="singtel-input-checkbox-container"
+                      >
+                        <input
+                          class="singtel-input-checkbox"
+                          type="checkbox"
+                          value="1"
+                        />
+                        <label
+                          for="singtel-input-checkboxId"
+                        />
+                        <span />
+                      </span>
+                    </div>
+                  </span>
+                </div>
+              </td>
+              <td
+                class="singtel-table-cell"
+              >
+                <ul>
+                  <li>
+                    <span
+                      class="head1"
+                    >
+                      name:
+                    </span>
+                       
+                    <span
+                      class="val1"
+                    >
+                      Jack1
+                    </span>
+                  </li>
+                  <li>
+                    <span
+                      class="head1"
+                    >
+                      age:
+                    </span>
+                       
+                    <span
+                      class="val1"
+                    >
+                      38
+                    </span>
+                  </li>
+                  <li>
+                    <span
+                      class="head1"
+                    >
+                      address:
+                    </span>
+                       
+                    <span
+                      class="val1"
+                    >
+                      some where
+                    </span>
+                  </li>
+                  <li>
+                    <span
+                      class="head1"
+                    >
+                      operations:
+                    </span>
+                       
+                    <span
+                      class="val1"
+                    >
+                      qwe
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr
+              class="singtel-table-row singtel-table-row-level-0"
+              data-row-key="2"
+            >
+              <td
+                class="singtel-table-cell"
+              >
+                <div
+                  class="chooseColumn"
+                >
+                  <span>
+                    <div>
+                      <span
+                        class="singtel-input-checkbox-container"
+                      >
+                        <input
+                          class="singtel-input-checkbox"
+                          type="checkbox"
+                          value="2"
+                        />
+                        <label
+                          for="singtel-input-checkboxId"
+                        />
+                        <span />
+                      </span>
+                    </div>
+                  </span>
+                </div>
+              </td>
+              <td
+                class="singtel-table-cell"
+              >
+                <ul>
+                  <li>
+                    <span
+                      class="head1"
+                    >
+                      name:
+                    </span>
+                       
+                    <span
+                      class="val1"
+                    >
+                      Rose
+                    </span>
+                  </li>
+                  <li>
+                    <span
+                      class="head1"
+                    >
+                      age:
+                    </span>
+                       
+                    <span
+                      class="val1"
+                    >
+                      26
+                    </span>
+                  </li>
+                  <li>
+                    <span
+                      class="head1"
+                    >
+                      address:
+                    </span>
+                       
+                    <span
+                      class="val1"
+                    >
+                      some where
+                    </span>
+                  </li>
+                  <li>
+                    <span
+                      class="head1"
+                    >
+                      operations:
+                    </span>
+                       
+                    <span
+                      class="val1"
+                    >
+                      aaa
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Table renders JSX correctly for sorted table 1`] = `
+<div
+  class="singtel-table-wrapper"
+>
+  <div
+    class="singtel-table"
+  >
+    <div
+      class="singtel-table-container"
+    >
+      <div
+        class="singtel-table-content"
+      >
+        <table
+          style="table-layout: auto;"
+        >
+          <colgroup />
+          <thead
+            class="singtel-table-thead"
+          >
+            <tr>
+              <th
+                class="singtel-table-cell"
+                scope="col"
+              >
+                Contract details
+              </th>
+            </tr>
+          </thead>
+          <tbody
+            class="singtel-table-tbody"
+          >
+            <tr
+              class="singtel-table-row singtel-table-row-level-0"
+              data-row-key="1"
+            >
+              <td
+                class="singtel-table-cell"
+              >
+                <ul>
+                  <li>
+                    <span
+                      class="head1"
+                    >
+                      name:
+                    </span>
+                       
+                    <span
+                      class="val1"
+                    >
+                      Jack1
+                    </span>
+                  </li>
+                  <li>
+                    <span
+                      class="head1"
+                    >
+                      age:
+                    </span>
+                       
+                    <span
+                      class="val1"
+                    >
+                      38
+                    </span>
+                  </li>
+                  <li>
+                    <span
+                      class="head1"
+                    >
+                      address:
+                    </span>
+                       
+                    <span
+                      class="val1"
+                    >
+                      some where
+                    </span>
+                  </li>
+                  <li>
+                    <span
+                      class="head1"
+                    >
+                      operations:
+                    </span>
+                       
+                    <span
+                      class="val1"
+                    >
+                      qwe
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr
+              class="singtel-table-row singtel-table-row-level-0"
+              data-row-key="2"
+            >
+              <td
+                class="singtel-table-cell"
+              >
+                <ul>
+                  <li>
+                    <span
+                      class="head1"
+                    >
+                      name:
+                    </span>
+                       
+                    <span
+                      class="val1"
+                    >
+                      Rose
+                    </span>
+                  </li>
+                  <li>
+                    <span
+                      class="head1"
+                    >
+                      age:
+                    </span>
+                       
+                    <span
+                      class="val1"
+                    >
+                      26
+                    </span>
+                  </li>
+                  <li>
+                    <span
+                      class="head1"
+                    >
+                      address:
+                    </span>
+                       
+                    <span
+                      class="val1"
+                    >
+                      some where
+                    </span>
+                  </li>
+                  <li>
+                    <span
+                      class="head1"
+                    >
+                      operations:
+                    </span>
+                       
+                    <span
+                      class="val1"
+                    >
+                      aaa
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+`;
