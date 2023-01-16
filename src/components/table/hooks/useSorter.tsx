@@ -48,7 +48,9 @@ export default function useSorter(props?:IuseSorterProps): SortState {
       return cloneColumns.map((item)=>{
         if(item?.sorter){
           if(item?.sortDirections){
-            item.title=(<div className='arrowTitleContainer'  onClick={()=>onSort(item?.defaultSortOrder || item?.sortDirections[0],item.sorter)}>
+            return {
+              ...item,
+              title:<div className='arrowTitleContainer'  onClick={()=>onSort(item?.defaultSortOrder || item?.sortDirections[0],item.sorter)}>
               <span>{item.title}</span>
               <span className='singleArrowContainer'>
                 {
@@ -57,20 +59,26 @@ export default function useSorter(props?:IuseSorterProps): SortState {
                   : <img className="singleArrow" src="/assets/img/sorting-up.svg" alt="" />
                 }
               </span>  
-            </div>)
+            </div>
+            }
+            // item.title=()
           }else if(item?.defaultSortOrder){
-            item.title=(<div className='arrowTitleContainer' onClick={()=>onSort(item?.defaultSortOrder || item?.sortDirections[0],item.sorter)}>
+            return {
+              ...item,
+              title:<div className='arrowTitleContainer' onClick={()=>onSort(item?.defaultSortOrder || item?.sortDirections[0],item.sorter)}>
               <span>{item.title}</span>
               <span className='singleArrowContainer'>
                 <img className="singleArrow" src="/assets/img/sorting-netural.svg" alt="" />
               </span>  
-            </div>)
+            </div>
+            }
           }
+        }else{
+          return item
         }
-        return item
       })
     },
-    [],
+    [isMb],
   );
   
   return {transformSorterColumns,sortStates}

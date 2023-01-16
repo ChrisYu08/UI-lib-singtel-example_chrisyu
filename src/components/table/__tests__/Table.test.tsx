@@ -10,8 +10,8 @@ describe('Table',()=>{
     cleanup();
   });
   const data = [
-    { name: 'Jack1', age: 38, address: 'some where', key: '1',operations:'qwe' },
-    { name: 'Rose', age: 26, address: 'some where', key: '2',operations:'aaa' },
+    { name: 'Jack1', age: 38, address: 'some where', key: '1',mobile:'1122' },
+    { name: 'Rose', age: 26, address: 'some where', key: '2',mobile:'2211' },
   ];
   it('renders JSX correctly for plain table', () => {
     const columns = [
@@ -34,9 +34,9 @@ describe('Table',()=>{
         width: '20%',
       },
       {
-        title: 'Operations',
-        dataIndex: 'operations',
-        key: 'operations',
+        title: 'Mobile',
+        dataIndex: 'mobile',
+        key: 'mobile',
       },
     ];
       const { asFragment } = render(
@@ -70,9 +70,9 @@ describe('Table',()=>{
         width: '20%',
       },
       {
-        title: 'Operations',
-        dataIndex: 'operations',
-        key: 'operations',
+        title: 'mobile',
+        dataIndex: 'mobile',
+        key: 'mobile',
       },
     ];
     const { asFragment } = render(
@@ -106,9 +106,9 @@ it('renders JSX correctly for selection table', () => {
       width: '20%',
     },
     {
-      title: 'Operations',
-      dataIndex: 'operations',
-      key: 'operations',
+      title: 'mobile',
+      dataIndex: 'mobile',
+      key: 'mobile',
     },
   ];
   const rowSelection = {

@@ -1,6 +1,8 @@
-import * as React from 'react';
+import React,{useState} from 'react';
 import Table from '../components/table/Table';
+import Radio from '../components/radio';
 import '../components/table/style/index.less';
+import './index.less';
 
 export interface ITryProps {
 }
@@ -29,15 +31,15 @@ const columns = [
     width: '20%',
   },
   {
-    title: 'Operations',
-    dataIndex: 'operations',
-    key: 'operations',
+    title: 'Mobile',
+    dataIndex: 'mobile',
+    key: 'mobile',
   },
 ];
 
 const data = [
-  { name: 'Jack1', age: 38, address: 'some where', key: '1',operations:'qwe' },
-  { name: 'Rose', age: 26, address: 'some where', key: '2',operations:'aaa' },
+  { name: 'Jack1', age: 38, address: 'some where', key: '1',mobile:'1111' },
+  { name: 'Rose', age: 26, address: 'some where', key: '2',mobile:'2222' },
 ];
 
 // rowSelection object indicates the need for row selection
@@ -47,19 +49,40 @@ const rowSelection = {
   }
 };
 
+
 export default function SintelTable (props: ITryProps) {
+  const [curType, setcurType] = useState<'checkbox' | 'radio'>('checkbox');
+  const [theme, settheme] = useState<'purple' | 'orange'>('purple');
+  const handleChange=(type:'checkbox' | 'radio')=>{
+    console.log(type)
+    setcurType(type)
+  }
+  const handleThemeChange=(type:'purple' | 'orange')=>{
+    console.log(type)
+    settheme(type)
+  }
   return (
     <div>
-      {/* <CheckBox
-        onChange={(e)=>{console.log(e)}}
-      /> */}
+      <h1>This is an example for client side usage</h1>
+      <h1>The library design and architecture can check with the code and storybook</h1>
+      <div>
+        <div className='radioContainer'>
+          <Radio checked={curType==='checkbox'} onChange={()=>handleChange('checkbox')} label='checkbox' />
+          <Radio checked={curType==='radio'} onChange={()=>handleChange('radio')} label='radio' />
+        </div>
+        <div className='radioContainer'>
+          <Radio checked={theme==='purple'} onChange={()=>handleThemeChange('purple')} label='purple' />
+          <Radio checked={theme==='orange'} onChange={()=>handleThemeChange('orange')} label='orange' />
+        </div>
+      </div>
       <Table 
         rowSelection={{
-          type: 'checkbox',
+          type: curType,
           ...rowSelection,
         }}
         columns={columns} 
         data={data} 
+        theme={theme}
       />
     </div>
   );

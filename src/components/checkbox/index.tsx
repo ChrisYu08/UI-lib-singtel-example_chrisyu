@@ -18,15 +18,6 @@ export default function CheckBox (props: ICheckBoxProps) {
     const checked=ev.target.checked
     setcheckedState(checked)
   }
-  // useEffect(() => {
-  //   document?.documentElement?.setAttribute(
-  //     'singtel-theme',
-  //     'orange'
-  //   );
-  // }, []);
-  // const checkBoxGroup = useMemo(() => {
-  //   data.map()
-  // }, [data]);
   return (
     <div>
       <span className='singtel-input-checkbox-container'>

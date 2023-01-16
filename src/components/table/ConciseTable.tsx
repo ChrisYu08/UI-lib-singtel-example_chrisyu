@@ -19,11 +19,11 @@ export interface TableProps<RecordType> extends RcTableProps{
   columns?: ColumnsType<RecordType>;
 
   onChange?: (
-    // pagination: TablePaginationConfig,
     filters: Record<string, FilterValue | null>,
     sorter: SorterResult<RecordType> | SorterResult<RecordType>[],
   ) => void;
   rowSelection?: TableRowSelection<RecordType>;
+  theme?: 'purple' | 'orange'
 }
 
 function ConciseTable<RecordType extends object = any> (props:TableProps<RecordType>) {
@@ -34,7 +34,8 @@ function ConciseTable<RecordType extends object = any> (props:TableProps<RecordT
     // rowKey = 'key',
     // rowClassName,
     columns,
-    data
+    data=[],
+    theme='purple'
   }=props;
   const [curData, setcurData] = useState<Array<any>>([]);
   const [curColumns, setcurColumns] = useState<Array<any>>([]);
@@ -88,7 +89,7 @@ function ConciseTable<RecordType extends object = any> (props:TableProps<RecordT
 
   useEffect(() => {
     init()
-  }, []);
+  }, [rowSelection?.type]);
 
   useEffect(() => {
     const {sorted}= sortStates;
@@ -98,6 +99,13 @@ function ConciseTable<RecordType extends object = any> (props:TableProps<RecordT
       setcurData(sortedData)
     }
   }, [sortedData]);
+
+  useEffect(() => {
+    document?.documentElement?.setAttribute(
+      'singtel-theme',
+      theme
+    );
+  }, [theme]);
 
   return <div style={style} className={wrapperClassNames}>
     <RcTable<RecordType>

@@ -9,13 +9,17 @@ export interface IRadioProps {
 
 export default function Radio (props: IRadioProps) {
   const { checked, onChange,label } = props;
-  const [checkedState, setcheckedState] = useState();
-  const handleChange=(ev)=>{
-    onChange(ev)
+  const [checkedState, setcheckedState] = useState(false);
+  const handleClick=(args)=>{
+    checked===undefined && setcheckedState(!checkedState)
+    onChange && onChange(args)
+  }
+  const handleChange=(args)=>{
+    onChange && onChange(args)
   }
   return (
-    <div>
-      <span className='singtel-input-radio-container'>
+    <div className='singtel-radio'>
+      <span className='singtel-input-radio-container' onClick={handleClick}>
           <input
             className='singtel-input-radio'
             type="radio"
@@ -23,8 +27,8 @@ export default function Radio (props: IRadioProps) {
             onChange={handleChange}
           />
           <label htmlFor="singtel-input-radioId"></label>
-          <span>{ label }</span>
-        </span>
+        </span>          
+        <span className='singtel-label'>{ label }</span>
     </div>
   );
 }
